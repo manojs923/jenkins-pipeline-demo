@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo '===== STAGE 2: Building the application ====='
-                bat 'mkdir -p output'
+                bat 'mkdir output'
                 bat 'echo "This is my app version 1.0" > output/app.txt'
                 bat 'Build complete! Output file created.'
             }
